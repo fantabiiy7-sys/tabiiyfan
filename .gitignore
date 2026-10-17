@@ -1,0 +1,11 @@
+node_modules
+server/dist
+web/dist
+data/*.db
+data/*.db-*
+data/uploads/*
+!data/uploads/.gitkeep
+.env
+netlify/data
+netlify/lib/server.bundle.mjs
+server/.build

@@ -1,0 +1,34 @@
+{
+  "name": "tabiiy-fan",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Tabiiy fan (Science) — 5–6-sinflar uchun fanlararo integratsiya platformasi",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "build:web": "node scripts/build-web.mjs",
+    "build:server": "tsc -p server/tsconfig.json",
+    "build": "npm run build:web && npm run build:server",
+    "seed": "node --experimental-sqlite server/dist/seed.js",
+    "start": "node server/dist/index.js",
+    "test": "node --no-warnings --test server/dist/tests/*.test.js",
+    "check:i18n": "node scripts/check-i18n.mjs",
+    "check:web": "tsc -p web/tsconfig.json",
+    "backup": "node scripts/backup.mjs",
+    "verify": "npm run check:i18n && npm run check:web && npm run build && npm test",
+    "build:netlify": "node --no-warnings scripts/netlify-build.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "acorn": "^8.18.0",
+    "esbuild": "^0.28.2",
+    "highlight.js": "^11.12.0",
+    "prettier": "^3.8.1",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "typescript": "^6.0.3",
+    "zod": "^3.25.76"
+  }
+}
