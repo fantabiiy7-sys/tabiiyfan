@@ -1,0 +1,14 @@
+<main class="wrap">
+  <h1 id="title"></h1>
+  <div class="row">
+    <canvas id="box" width="360" height="300" role="img" aria-label=""></canvas>
+    <div class="panel">
+      <p class="temp"><span id="tl"></span>: <output id="tOut">20</output> °C</p>
+      <input id="temp" type="range" min="-20" max="120" step="1" value="20" aria-labelledby="tl">
+      <div class="state" id="state" aria-live="polite"></div>
+      <p id="desc" class="desc"></p>
+      <ul class="legend" id="legend"></ul>
+    </div>
+  </div>
+  <p class="note" id="note"></p>
+</main>

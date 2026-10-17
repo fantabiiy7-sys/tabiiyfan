@@ -1,0 +1,12 @@
+:root{--ink:#1b2a41;--accent:#1d5fbf;--line:#c9d6ea}
+body{background:#f4f7fb;color:var(--ink)}
+.wrap{max-width:760px;margin:0 auto;padding:12px}
+h1{font-size:1.2rem;margin:4px 0 10px}
+.row{display:grid;grid-template-columns:minmax(0,360px) 1fr;gap:14px}
+@media(max-width:600px){.row{grid-template-columns:1fr}}
+canvas{width:100%;height:auto;background:#fff;border:2px solid var(--ink);border-radius:8px;display:block}
+.panel input{width:100%}.temp{font-size:1.1rem;margin:0 0 6px}
+.state{display:inline-block;padding:6px 14px;border-radius:999px;color:#fff;font-weight:700;margin:10px 0}
+.desc{margin:0 0 10px}.legend{padding-left:18px;margin:0;font-size:.9rem}
+input:focus-visible{outline:3px solid #f5a623;outline-offset:2px}
+.note{font-size:.85rem;color:#4b5f76}

@@ -1,0 +1,12 @@
+:root{--ink:#14213d;--accent:#2b59c3;--line:#c8d3ea}
+body{background:#f3f6fc;color:var(--ink)}
+.wrap{max-width:760px;margin:0 auto;padding:12px}
+h1{font-size:1.2rem;margin:4px 0 10px}h2{font-size:1.05rem;margin:0 0 4px}
+canvas{width:100%;height:auto;border-radius:10px;background:#0b1230;display:block}
+.controls{display:flex;gap:12px;align-items:center;margin:10px 0}.controls input{flex:1}
+.list{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+button{font:inherit;border:1px solid var(--accent);background:#fff;color:var(--accent);padding:5px 10px;border-radius:8px;cursor:pointer}
+button[aria-pressed="true"],button:hover{background:var(--accent);color:#fff}
+button:focus-visible,input:focus-visible{outline:3px solid #f5a623;outline-offset:2px}
+.card{background:#fff;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:10px 12px;min-height:5.5em}
+.note{font-size:.85rem;color:#4b5f76}
